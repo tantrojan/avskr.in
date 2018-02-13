@@ -15,29 +15,22 @@ var typed = new Typed(".type", {
 });
 
 
-// $(function() {
-//   $('a').on('click', function(e) {
-//     e.preventDefault();
-//     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-//   });
-// });
+$(document).ready(function(){
 
-// $('.menu-burger, .menu-items').on('click', function() {
-//   $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
-//   $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
-// });
+	var controller = new ScrollMagic.Controller();
+	// Spaceship
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement:'#obj'
+	})
+	.setClassToggle('#obj', 'fade-in')
+	.addIndicators()
+	.addTo(controller);
 
-// $(document).ready(function () {
-//           function rgt() {
-//               $('#clo').animate({ left: "1500" }, 20000, hider);
-//             }
-//             rgt();
-//             function hider() {
-//             $('#clo').css('left', '-2000px');
-//                 rgt();
-//             }
-//         });
-
-// $('body').scroll(function(){
-//   console.log('Hi');
-// })
+	// About Us Detail
+	var ourScene = new ScrollMagic.Scene({
+		triggerElement:'#obj'
+	})
+	.setClassToggle('#obj', 'fade-in')
+	.addIndicators()
+	.addTo(controller);
+})

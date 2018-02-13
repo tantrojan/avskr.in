@@ -1,6 +1,17 @@
 html, body {
   background: url('../images/layers/bg-100.jpg');
+  overflow: hidden;
 }
+h1{
+    background-color: #f7931e;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+
+}
+
 .parallax {
   perspective: 100px;
   height: 100vh;
@@ -86,6 +97,17 @@ html, body {
 
 .alien{
     height: 180px;
+}
+
+.base{
+  opacity:0;
+  transform: translateY(100px);
+  transition: all 1s ease-out;
+}
+
+.base.fade-in{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media only screen and (max-width: 500px) {
