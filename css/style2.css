@@ -1,0 +1,115 @@
+html, body {
+  background: url('../images/back.jpg');
+}
+.parallax {
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*margin-left: -1500px;*/
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.parallax__cover {
+  background: #13132f;
+  display: block;
+  position: absolute;
+  top: 99.9%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 2;
+}
+.parallax__layer__0 {
+  transform: translateZ(-300px) scale(4);
+}
+.parallax__layer__1 {
+  transform: translateZ(-250px) scale(3.5);
+}
+.parallax__layer__2 {
+  transform: translateZ(-200px) scale(3);
+}
+.parallax__layer__3 {
+  transform: translateZ(-150px) scale(2.5);
+}
+.parallax__layer__4 {
+  transform: translateZ(-100px) scale(2);
+}
+.parallax__layer__5 {
+  transform: translateZ(-50px) scale(1.5);
+}
+.parallax__layer__6 {
+  transform: translateZ(0px) scale(1);
+}
+
+#section02 h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 15%;
+  text-decoration: underline;
+  float: right;
+  font-size: 6rem;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+#section02 p {
+  margin-top: 5%;
+  text-align: center;
+  color: #ffffff;
+  float: left;
+  font-size: 2.6rem;
+}
+
+.type{
+    max-height: 200px; 
+    font-size: 40px;
+    font-family:"Rammetto one";
+}
+
+.alien{
+    height: 180px;
+}
+
+@media only screen and (max-width: 500px) {
+    .type{
+        margin-top: 40%;
+        max-height: 200px; 
+        font-size: 20px;
+        font-family:"Rammetto one";
+    }
+    /*.spaceship {
+      max-height: 100px;
+      margin-top: 30%;
+      margin-left: -12%;
+    }*/
+    .alien{
+      display: none;
+    }
+    .details{
+    	margin: 0px 20px 0px 20px;
+    }
+    .side-spaceship {
+    	display: none;
+    }
+    #section02 h1 {
+      font-size: 4rem;
+    }
+    #section02 p {
+      font-size: 1.9rem;
+    }
+}
